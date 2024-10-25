@@ -1,5 +1,5 @@
 import './Board.css'
-import Label from './label';
+import Label from './Label';
 import Pieces from '../Pieces/Pieces'
 import { useReducer } from 'react';
 import { useAppContext } from '../../context/Context';
