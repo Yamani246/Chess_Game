@@ -1,9 +1,8 @@
 import './Board.css'
-import Label from './Label';
+import {Files,Ranks} from './Label';
 import Pieces from '../Pieces/Pieces'
 import { useReducer } from 'react';
 import { useAppContext } from '../../context/Context';
-const { Files, Ranks } = Label;
 
 
 const Board = () => {
