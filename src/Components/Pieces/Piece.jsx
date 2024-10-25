@@ -6,7 +6,7 @@ const Piece = ({rank,file,piece}) => {
     const {appState , dispatch} = useAppContext()
     const {turn,position} =appState
     const currentPosition = position[position.length-1]
-    
+    const prePosition = position[position.length-2]
     
     const onDragStart = (e) => {
         e.dataTransfer.effectAllowed='move'
@@ -15,7 +15,7 @@ const Piece = ({rank,file,piece}) => {
         e.target.style.display = 'none'
         },0) 
         if (turn === piece.split('_')[1]){
-            const candidateMoves =arbiter.getRegularMoves({position:currentPosition,rank,file,piece})
+            const candidateMoves =arbiter.getValidMoves({position:currentPosition,prePosition:prePosition,rank,file,piece})
             dispatch(generateCadidateMoves(candidateMoves))
         }
     }

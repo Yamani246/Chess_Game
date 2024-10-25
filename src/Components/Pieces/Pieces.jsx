@@ -18,10 +18,14 @@ const Pieces = () => {
         return { x, y }
     }
     const onDrop = (e) => {
+        e.preventDefault()
         const newPositon = copyPosition(currentPosition)
         const { x, y } = calculate(e)
         const [piece, rank, file] = e.dataTransfer.getData('text').split(',')
         if (candidateMoves?.find(m => m[0] === x && m[1] === y)) {
+            if(piece.startsWith('p') && !newPositon[x][y] && x!==rank && y!==file){
+                newPositon[rank][y]=''
+            }
             newPositon[rank][file] = ''
             newPositon[x][y] = piece
             dispatch(makeNewMove(newPositon))

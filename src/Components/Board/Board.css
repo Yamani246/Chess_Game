@@ -83,3 +83,20 @@
     left: 0;
     top: 0;
 }
+/* Responsive Styles */
+
+/* Medium Screens (like tablets) */
+@media (max-width: 1024px) {
+    :root {
+        --tile-size: 50px; /* Smaller tile size for tablets */
+    }
+    
+}
+
+/* Small Screens (like mobile devices) */
+@media (max-width: 400px) {
+    :root {
+        --tile-size: 35px; /* Even smaller tile size for mobile */
+    }
+    
+}

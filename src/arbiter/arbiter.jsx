@@ -18,11 +18,18 @@ const arbiter = {
         return getKingMove({position,rank,file,piece})
         }
         if (piece.startsWith('p')){
-        return [
-            ...getPawnMove({position,rank,file,piece}),
-            ...getPawnCaptureMove({position,rank,file,piece})
-        ]
+        return getPawnMove({position,rank,file,piece})
         }
+    },
+    getValidMoves : function({position,prePosition,rank,file,piece}){
+        let moves = this.getRegularMoves({position,rank,file,piece})
+        if (piece.startsWith('p')){
+           moves=[
+             ...moves,
+            ...getPawnCaptureMove({position,prePosition,rank,file,piece})
+           ]
+        }
+        return moves
     }
 }
 

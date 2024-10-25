@@ -15,7 +15,33 @@
     top: 9px;
     position: absolute;
 }
+/* For medium screens (like tablets) */
+@media (max-width: 1024px) {
+    .pieces {
+        width: 400px;
+        height: 400px;
+    }
+    .piece {
+        width: 50px;
+        height: 50px;
+        top: 7px;
+        left:9px;
+        background-size: 30px;
+    }
+}
 
+/* For small screens (like mobile devices) */
+@media (max-width: 400px) {
+    .pieces {
+        width: 350px;
+        height: 350px;
+    }
+    .piece {
+        width: 45px;
+        height: 45px;
+        background-size: 30px;
+    }
+}
 .piece.r_b {background-image: url('../../assets/r_b.png');}
 .piece.n_b {background-image: url('../../assets/n_b.png');}
 .piece.b_b {background-image: url('../../assets/b_b.png');}
