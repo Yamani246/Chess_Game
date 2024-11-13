@@ -12,7 +12,7 @@ This is a chess game built with React, where users can play against each other, 
 ## Tech Stack
 
 - **Frontend**: React, React Context API, React Hooks
-- **CSS**: CSS 
+- **CSS**
 - **Chess Logic**: Custom logic for moves and validations
 - **State Management**: React Context API
 
