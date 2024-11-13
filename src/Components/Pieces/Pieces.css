@@ -2,20 +2,19 @@
     position: absolute;
     top:0;
     left:0;
-    width: 664px;
-    height: 664px;
+    width: 560px;
+    height: 560px;
 }
 
 .piece{
-    width: 83px;
-    height: 83px;
+    width: 70px;
+    height: 70px;
     background-repeat: no-repeat;
-    background-size: 50px;
+    background-size: 40px;
     left:15px;
     top: 9px;
     position: absolute;
 }
-/* For medium screens (like tablets) */
 @media (max-width: 1024px) {
     .pieces {
         width: 400px;
@@ -29,8 +28,6 @@
         background-size: 30px;
     }
 }
-
-/* For small screens (like mobile devices) */
 @media (max-width: 400px) {
     .pieces {
         width: 350px;

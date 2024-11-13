@@ -3,6 +3,7 @@ import {Files,Ranks} from './Label';
 import Pieces from '../Pieces/Pieces'
 import { useReducer } from 'react';
 import { useAppContext } from '../../context/Context';
+import Popup from '../Popup/popup';
 
 
 const Board = () => {
@@ -42,12 +43,14 @@ const Board = () => {
                         files.map((file,j)=>
                             <div key={file+'='+rank} onDragOver={onDragOver} className={getClassName(7-i,j)}></div>
                         )
-                    )}
+                    )} 
+                </div>
                 </div>
                 
-                </div>
                 <Pieces/>
+                <Popup/>
             </div>
+            
             <Files files={files}/> 
             
         </div>

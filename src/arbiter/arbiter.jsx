@@ -1,4 +1,5 @@
 import {getBishopMove, getKingMove, getKnightMove, getPawnCaptureMove, getPawnMove, getQueenMove, getRookMove} from './getMoves'
+import { movePawn, movePiece } from './moves'
 
 const arbiter = {
     getRegularMoves : function ({position,rank,file,piece}){
@@ -30,6 +31,14 @@ const arbiter = {
            ]
         }
         return moves
+    },
+    performMove : function({position,piece,rank,file,x,y}){
+        if(piece.startsWith('p')){
+            return movePawn({position,piece,rank,file,x,y})
+        }
+        else{
+            return movePiece({position,piece,rank,file,x,y})
+        }
     }
 }
 

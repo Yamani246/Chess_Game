@@ -1,7 +1,7 @@
 .container{
     display: grid;
-    grid-template-columns: calc(.35*var(--tile-size)) 3px repeat(8, var(--tile-size)) 3px calc(.35*var(--tile-size));
-    grid-template-rows: calc(.35*var(--tile-size)) 3px repeat(8, var(--tile-size)) 3px calc(.37*var(--tile-size));
+    grid-template-columns: calc(.25*var(--tile-size)) 3px repeat(8, var(--tile-size)) 3px calc(.35*var(--tile-size));
+    grid-template-rows: calc(.25*var(--tile-size)) 3px repeat(8, var(--tile-size)) 3px calc(.37*var(--tile-size));
     position:relative;
     background-color: white;
     box-shadow: -3px -3px 15px 15px rgba(70, 68, 68, 0.475); 

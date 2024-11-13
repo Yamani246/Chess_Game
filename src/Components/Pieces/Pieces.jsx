@@ -4,6 +4,7 @@ import './Pieces.css';
 import { copyPosition, createPosition } from '../../helper';
 import { useAppContext } from '../../context/Context';
 import { clearCandidateMoves, makeNewMove } from '../../reducer/actions/move';
+import arbiter from '../../arbiter/arbiter';
 
 const Pieces = () => {
     const ref = useRef()
@@ -17,21 +18,20 @@ const Pieces = () => {
         const x = 7 - Math.floor((e.clientY - top) / size)
         return { x, y }
     }
-    const onDrop = (e) => {
-        e.preventDefault()
-        const newPositon = copyPosition(currentPosition)
+    const move = (e) => {
         const { x, y } = calculate(e)
         const [piece, rank, file] = e.dataTransfer.getData('text').split(',')
         if (candidateMoves?.find(m => m[0] === x && m[1] === y)) {
-            if(piece.startsWith('p') && !newPositon[x][y] && x!==rank && y!==file){
-                newPositon[rank][y]=''
-            }
-            newPositon[rank][file] = ''
-            newPositon[x][y] = piece
+            const newPositon = arbiter.performMove({position:currentPosition,piece,rank,file,x,y})
             dispatch(makeNewMove(newPositon))
         }
         dispatch(clearCandidateMoves())
+    }
 
+
+    const onDrop = (e) => {
+        e.preventDefault()
+        move(e)
     }
     const onDragOver = (e) => {
         e.preventDefault()
