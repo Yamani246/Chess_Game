@@ -1,6 +1,6 @@
 # Chess Game
 
-This is a fully-functional chess game built with React, where users can play against each other, make moves, and use the promotion feature when a pawn reaches the last rank.
+This is a chess game built with React, where users can play against each other, make moves, use the promotion feature when a pawn reaches the last rank, etc...
 
 ## Features
 
@@ -12,7 +12,7 @@ This is a fully-functional chess game built with React, where users can play aga
 ## Tech Stack
 
 - **Frontend**: React, React Context API, React Hooks
-- **CSS**: CSS Modules, BEM Naming Convention
+- **CSS**: CSS 
 - **Chess Logic**: Custom logic for moves and validations
 - **State Management**: React Context API
 
