@@ -36,14 +36,12 @@ This is a fully-functional chess game built with React, where users can play aga
 3. Install the dependencies:
 
     ```bash
-    Copy code
     npm install
     # or if you use yarn:
     yarn install
 4. Run the application:
 
     ```bash
-    Copy code
     npm start
     # or if you use yarn:
     yarn start
