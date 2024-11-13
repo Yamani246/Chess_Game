@@ -8,7 +8,6 @@ This is a fully-functional chess game built with React, where users can play aga
 - **Promotion**: Pawns are promoted to queen, rook, bishop, or knight when reaching the last rank.
 - **Valid Moves**: Pieces can only move to valid squares.
 - **Chess Rules**: The game enforces traditional chess movement rules for each piece (pawn, rook, knight, bishop, queen, king).
-- **Responsive Design**: The game is designed to be fully responsive and works on both desktop and mobile devices.
 
 ## Tech Stack
 
