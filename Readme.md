@@ -42,9 +42,9 @@ This is a chess game built with React, where users can play against each other, 
 4. Run the application:
 
     ```bash
-    npm start
+    npm run dev
     # or if you use yarn:
-    yarn start
+    yarn run dev
 5. Open your browser and visit http://localhost:3000.
 
 ## Usage
