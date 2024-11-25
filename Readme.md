@@ -1,4 +1,4 @@
-# Chess Game
+# Chess Game (Ongoing)
 
 This is a chess game built with React, where users can play against each other, make moves, use the promotion feature when a pawn reaches the last rank, etc...
 
