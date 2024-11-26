@@ -1,12 +1,12 @@
 import './App.css';
-import Board from './components/Board/Board';
-import { reducer } from './reducer/reducer'
+import Board from './components/Board/Board.jsx';
+import { reducer } from './reducer/reducer.jsx'
 import { useReducer } from 'react'
-import { initGameState } from './constants';
-import AppContext from './contexts/Context'
-import Control from './components/Control/Control';
-import TakeBack from './components/Control/bits/TakeBack';
-import MovesList from './components/Control/bits/MovesList';
+import { initGameState } from './constants.jsx';
+import AppContext from './contexts/Context.jsx'
+import Control from './components/Control/Control.jsx';
+import TakeBack from './components/Control/bits/TakeBack.jsx';
+import MovesList from './components/Control/bits/MovesList.jsx';
 
 function App() {
 
