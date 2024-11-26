@@ -1,23 +1,33 @@
+import './App.css';
+import Board from './components/Board/Board';
+import { reducer } from './reducer/reducer'
 import { useReducer } from 'react'
-import './App.css'
-import Board from './Components/Board/Board'
-import { AppProvider } from './context/Context'
-import { reducer } from './reducer/reduer'
-import { initGame } from './Constant'
-function App() {
-  const [appState,dispatch]=useReducer(reducer,initGame)
-  const provideState = {
-    appState,
-    dispatch
-  }
-  return (
-    <AppProvider value={provideState}>
-      <div className='App'>
-        <Board />
-      </div>
-    </AppProvider>
+import { initGameState } from './constants';
+import AppContext from './contexts/Context'
+import Control from './components/Control/Control';
+import TakeBack from './components/Control/bits/TakeBack';
+import MovesList from './components/Control/bits/MovesList';
 
-  )
+function App() {
+
+    const [appState, dispatch ] = useReducer(reducer,initGameState);
+
+    const providerState = {
+        appState,
+        dispatch
+    }
+
+    return (
+        <AppContext.Provider value={providerState} >
+            <div className="App">
+                <Board/>
+                <Control>
+                    <MovesList/>
+                    <TakeBack/>
+                </Control>
+            </div>
+        </AppContext.Provider>
+    ); 
 }
 
-export default App
+export default App;
