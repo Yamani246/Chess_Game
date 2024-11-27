@@ -1,8 +1,7 @@
 import React from 'react';
-import { Status } from '../../constants';
-import { useAppContext }from '../../contexts/Context'
-import { closePopup } from '../../reducer/actions/popup';
-import PromotionBox from './PromotionBox/PromotionBox'
+import { Status } from '../../constants.jsx';
+import { useAppContext }from '../../contexts/Context.jsx'
+import { closePopup } from '../../reducer/actions/popup.jsx';
 import './Popup.css'
 
 const Popup = ({children}) => {

@@ -1,5 +1,5 @@
-import actionTypes from '../actionTypes';
-import { initGameState } from '../../constants';
+import actionTypes from '../actionTypes.jsx';
+import { initGameState } from '../../constants.jsx';
 
 export const updateCastling = (direction) => {
     return {

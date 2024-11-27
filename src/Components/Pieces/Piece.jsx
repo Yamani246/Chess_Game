@@ -1,6 +1,6 @@
-import arbiter from '../../arbiter/arbiter';
-import { useAppContext }from '../../contexts/Context'
-import { generateCandidates } from '../../reducer/actions/move';
+import arbiter from '../../arbiter/arbiter.jsx';
+import { useAppContext }from '../../contexts/Context.jsx'
+import { generateCandidates } from '../../reducer/actions/move.jsx';
 
 const Piece = ({
     rank,

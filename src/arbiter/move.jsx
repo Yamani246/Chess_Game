@@ -1,4 +1,4 @@
-import { copyPosition } from "../helper"
+import { copyPosition } from "../helper.jsx"
 
 export const movePiece = ({position,piece,rank,file,x,y}) => {
 

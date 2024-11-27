@@ -1,14 +1,14 @@
 import './Pieces.css'
-import Piece from './Piece'
+import Piece from './Piece.jsx'
 import { useRef  } from 'react'
-import { useAppContext }from '../../contexts/Context'
-import { openPromotion } from '../../reducer/actions/popup'
-import { getCastlingDirections } from '../../arbiter/getMoves'
-import { updateCastling, detectStalemate, detectInsufficientMaterial, detectCheckmate} from '../../reducer/actions/game'
+import { useAppContext }from '../../contexts/Context.jsx'
+import { openPromotion } from '../../reducer/actions/popup.jsx'
+import { getCastlingDirections } from '../../arbiter/getMoves.jsx'
+import { updateCastling, detectStalemate, detectInsufficientMaterial, detectCheckmate} from '../../reducer/actions/game.jsx'
 
-import { makeNewMove, clearCandidates } from '../../reducer/actions/move'
-import arbiter from '../../arbiter/arbiter'
-import { getNewMoveNotation } from '../../helper'
+import { makeNewMove, clearCandidates } from '../../reducer/actions/move.jsx'
+import arbiter from '../../arbiter/arbiter.jsx'
+import { getNewMoveNotation } from '../../helper.jsx'
 
 const Pieces = () => {
 

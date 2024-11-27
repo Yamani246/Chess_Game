@@ -1,5 +1,5 @@
-import { Status } from "../constants";
-import actionTypes from "./actionTypes";
+import { Status } from "../constants.jsx";
+import actionTypes from "./actionTypes.jsx";
 export const reducer = (state, action) => {
 
     switch (action.type) {

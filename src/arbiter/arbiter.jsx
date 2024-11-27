@@ -1,6 +1,6 @@
-import { areSameColorTiles, findPieceCoords } from '../helper';
-import { getKnightMoves, getRookMoves, getBishopMoves, getQueenMoves, getKingMoves, getPawnMoves, getPawnCaptures, getCastlingMoves, getPieces, getKingPosition } from './getMoves'
-import { movePiece,movePawn } from './move';
+import { areSameColorTiles, findPieceCoords } from '../helper.jsx';
+import { getKnightMoves, getRookMoves, getBishopMoves, getQueenMoves, getKingMoves, getPawnMoves, getPawnCaptures, getCastlingMoves, getPieces, getKingPosition } from './getMoves.jsx'
+import { movePiece,movePawn } from './move.jsx';
 
 const arbiter = {
 

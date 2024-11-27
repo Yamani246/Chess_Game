@@ -1,6 +1,6 @@
-import { Status } from '../../../constants';
-import { useAppContext }from '../../../contexts/Context'
-import { setupNewGame } from '../../../reducer/actions/game';
+import { Status } from '../../../constants.jsx';
+import { useAppContext }from '../../../contexts/Context.jsx'
+import { setupNewGame } from '../../../reducer/actions/game.jsx';
 import './GameEnds.css'
 
 const GameEnds = ({onClosePopup}) => {
