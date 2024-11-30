@@ -1,5 +1,5 @@
 :root {
-    --tile-size : 80px;
+    --tile-size : 75px;
     --light-tile :white;
     --dark-tile : rgba(38, 82, 8, 0.776);
     --bg-color :  rgba(128, 128, 128, 0.283);
